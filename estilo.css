@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #34495e;
+}
+
+form.box p#login {
+    margin-left: 165px;
+    font-size: 30px;
+    color: #464953;
+}
+
+form.box {
+    background-color: rgba(255, 255, 255, 0.952);
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 150px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 16px 16px 48px #00000019;
+}
+
+div.box-input {
+    padding: 10px;
+}
+
+div.box-input input#user,
+div.box-input input#password {
+    display: block;
+    margin-left: 80px;
+    text-align: center;
+    outline: none;
+    padding: 12px;
+    margin: auto;
+    border-radius: 24px;
+    border: 0;
+    border: 2px solid #3498db;
+    color: #314458;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+div.box-input input#user:focus,
+div.box-input input#password:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 8px 0 #2ecc71;
+}
+
+input[type='submit'] {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 24px;
+    border: 0;
+    outline: none;
+    border: 2px solid #2ecc71;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+input[type='submit']:hover {
+    background: #2ecc71;
+}
+
+form.box p#criar-conta {
+    margin-left: 60px;
+}
