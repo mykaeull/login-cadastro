@@ -4,27 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estiloCadastro.css">
 </head>
 
 <body>
     <form class="box" method="POST">
-        <p id="login">Login</p>
+        <p id="login">Cadastro</p>
         <div class="box-input">
             <input type="text" id="user" placeholder="username" name="user">
         </div>
         <div class="box-input">
             <input type="password" id="password" placeholder="password" name="password">
         </div>
-        <input type="submit" id="botao" value="Entrar" formaction="http://localhost:3030/">
+        <div class="box-input">
+            <input type="password" id="confirmpassword" placeholder="confirm password" name="confirmpassword">
+        </div>
+        <input type="submit" id="botao" value="Cadastrar" formaction="http://localhost:3030/cadastro">
     </form>
-    <form id="criar-conta" method="POST">
-        <p id="criar-conta">
-            Não possui conta? acesse <a href="http://localhost:3030/cadastro">criar conta</a>
-        </p>
-    </form>
-
 </body>
 
 </html>

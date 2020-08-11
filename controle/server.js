@@ -7,7 +7,7 @@ const Usuarios = require('./models/cadastro')
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.post('/home', (req, res) => {
+app.post('/', (req, res) => {
     console.log(req.body)
     console.log(req.body.user)
     let login = req.body.user
@@ -25,10 +25,12 @@ app.post('/home', (req, res) => {
         for (let j = 0; j < listUsuarios.length; j++) {
             if ((listUsuarios[j] == login) && (listSenhas[j] == senha)) {
                 console.log('usuario logado!')
+                res.send('<h1>Logado com sucesso!</h1>')
                 break
             } else {
                 if (j == ((listUsuarios.length) - 1)) {
                     console.log('login inválido!')
+                    res.send('<h1>Dados inválidos!</h1>')
                 }
             }
         }
@@ -43,7 +45,10 @@ app.post('/home', (req, res) => {
     //    console.log('Falha ao cadastrar: ' + err)
     //})
 
-    res.sendFile("C:/Users/mykaeull/Desktop/projeto-solo/teste.html")
+})
+
+app.post('/cadastro', (req, res) => {
+    res.send('<h1>DEU CERTOOO</h1>')
 })
 
 app.listen(3030)

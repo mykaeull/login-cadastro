@@ -19,6 +19,7 @@ form.box {
     padding: 10px;
     border-radius: 3px;
     box-shadow: 16px 16px 48px #00000019;
+    padding-bottom: 30px;
 }
 
 div.box-input {
@@ -68,6 +69,8 @@ input[type='submit']:hover {
     background: #2ecc71;
 }
 
-form.box p#criar-conta {
-    margin-left: 60px;
+form#criar-conta p#criar-conta {
+    margin-left: 560px;
+    position: relative;
+    top: -45px;
 }
